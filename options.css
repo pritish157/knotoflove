@@ -1,0 +1,55 @@
+body {
+    background-image: url('floral-background-with-pink-flowers-leaves-beige-background_893012-265999.avif'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.options-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 0.5s forwards;
+}
+
+.options-container h2 {
+    margin-bottom: 30px;
+    color: #d63384; /* A romantic color for the heading */
+    font-family: 'Georgia', serif; /* Elegant font for the heading */
+    font-size: 2em;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    background-color: #ff6f61; /* Soft color for the buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Georgia', serif; /* Elegant font for the buttons */
+}
+
+.buttons button:hover {
+    background-color: #e5534b; /* Darker shade on hover */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

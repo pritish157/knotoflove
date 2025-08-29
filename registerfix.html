@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Magic Fix</title>
+    <link rel="stylesheet" href="registerfix.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="modal">
+            <h2>Create an Account</h2>
+            <form id="registrationForm" action="" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="regPhone">Phone Number</label>
+                    <input type="tel" id="regPhone" name="contact" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <label for="regDob">Date of Birth</label>
+                    <input type="text" id="regDob" name="dob" required class="flatpickr" placeholder="Date of Birth">
+                </div>
+                
+                <div class="input-group">
+                    <label for="regGender">Gender</label>
+                    <select id="regGender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="regReligion">Religion</label>
+                    <input type="text" id="regReligion" name="religion" placeholder="Religion" required>
+                </div>
+                <div class="input-group">
+                    <label for="regCaste">Caste</label>
+                    <input type="text" id="regCaste" name="caste" placeholder="Caste" required>
+                </div>
+                <div class="input-group">
+                    <label for="regIncome">Income</label>
+                    <input type="number" id="regIncome" name="income" placeholder="Income" required>
+                </div>
+                <div class="input-group">
+                    <label for="regImage">Upload Image</label>
+                    <input type="file" id="regImage" name="image" accept="image/*" required>
+                </div>
+              
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="registerfix.js"></script>
+</body>
+</html>
